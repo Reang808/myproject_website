@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | システム開発Reang</title>
+    <link rel="stylesheet" href="{% static 'css/contact_style.css' %}">
+</head>
+<body>
+    <header class="header-container">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <a href="/" class="logo-text">システム開発Reang</a>
+            </div>
+            
+            <nav id="mainNavigation" class="main-nav">
+                <ul class="flex space-x-8">
+                    <li><a href="index" class="nav-link">サービス</a></li>
+                    <li><a href="#" class="nav-link">料金プラン</a></li>
+                    <li><a href="#" class="button-primary">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle"> &#9776; </button>
+        </div>
+    </header>
+    <main>
+        <div class="container main-header">
+            <h1>お問い合わせ</h1>
+            <p>ご質問やご相談がある方は、以下のフォームからお問い合わせください。</p>
+        </div>
+        <form method="post" class="contact-form">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.company.label_tag }}<br>
+                {{ form.company }}
+            </div>
+            <div class="form-group">
+                {{ form.name.label_tag }}<br>
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                {{ form.email.label_tag }}<br>
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                {{ form.phone.label_tag }}<br>
+                {{ form.phone }}
+            </div>
+            <div class="form-group">
+                {{ form.contact_method.label_tag }}<br>
+                {{ form.contact_method }}
+            </div>
+            <div class="form-group">
+                {{ form.contact_date.label_tag }}<br>
+                {{ form.contact_date }}
+            </div>
+            <div class="form-group">
+                {{ form.message.label_tag }}<br>
+                {{ form.message }}
+            </div>
+            <button type="submit" class="submit-btn">送信</button>
+        </form>
+        {% if success %}
+            <p class="success-message">お問い合わせを送信しました。ありがとうございます。</p>
+        {% endif %}
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Reang</h3>
+                <p>&copy; 2025 Reang. All Rights Reserved.</p>
+            </div>
+            
+            <div class="footer-info">
+                <address>
+                    <p><br></p>
+                    <p>代表：後藤田 烈志</p>
+                    <p>電話：<a href="tel:08086363296">080-8636-3296</a>（平日 10:00 - 17:00）</p>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/contact_script.js' %}" ></script>
+</body>
+</html>

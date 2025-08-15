@@ -1,0 +1,191 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美容・サロン向けの予約・顧客管理システム開発 | Reang</title>
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header-container">
+        <div class="container header-inner">
+        <div class="logo-area">
+          <a href="/" class="logo-text">システム開発Reang</a>
+        </div>
+        
+        <nav id="mainNavigation" class="main-nav">
+          <ul class="flex space-x-8">
+            <li><a href="#service" class="nav-link">サービス</a></li>
+            <li><a href="#price" class="nav-link">料金プラン</a></li>
+            <li><a href="#contact" class="button-primary">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        
+        <button class="menu-toggle"> &#9776; </button>
+        </div>
+    </header>
+    <main>
+        <section class="main-header">
+        <img src="{% static 'images/bridge.jpg' %}" alt="美容・サロンの背景" class="header-bg-image">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">予約管理・顧客管理で、あなたのサロンをもっと豊かに。</h1>
+            <div class="hero-card fade-in-section">
+            <p class="hero-subtitle">お客様との時間を大切にするためのDX化をご提案します。</p>
+            <p class="heto-text">
+                予約対応の時間削減、顧客情報のスムーズな共有、来店率アップに繋がるシステムを<br>
+                全てオーダーメイドで提供します!
+            </p>
+            </div>
+        </div>
+        </section>
+        <section id="service" class="section-intro fade-in-section">
+            <div class="container intro-grid">
+
+                <div class="intro-image">
+                <img src="{% static 'images/office.jpg' %}" alt="Reang代表の写真">
+                </div>
+
+                <div class="intro-text">
+                <h2>サービス内容</h2>
+                <p>
+                    <span>予約システム</span>や<span>顧客管理システム</span>の開発を中心に、<br>
+                    美容院、エステ、ネイルサロンなど、個人事業主・中小企業の皆さまの業務を効率化するお手伝いをしています。<br>
+                    ヒヤリングから開発、運用まですべて私ひとりで担当。<br>
+                    美容業界の知識を持つ担当者がマンツーマンでサポートする<span>安心感</span>と、
+                    人を雇うよりもコストを抑えられる<span>柔軟な体制</span>が強みです。<br>
+                    <span>「ITは私に任せて、お客様との時間を大切にしてください。」</span><br>
+                    そんなサポートができれば嬉しいです。
+                </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="price" class="pricing" style="padding: 40px 0; background-color: #f9f9f9; font-family: sans-serif;">
+            <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
+                <h2 style="font-size: 32px; text-align: center; margin-bottom: 10px; color: #333;">
+                    最適な料金プランで、システム開発を。
+                </h2>
+                <p style="text-align: center; color: #666; margin-bottom: 40px;">
+                    お客様の課題やご予算に合わせて、3つのプランをご用意しました。
+                </p>
+
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                    <div style="flex: 1 1 280px; padding: 30px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <h4 style="font-size: 24px; color: #333; margin-bottom: 10px;">独自ブランド構築プラン</h4>
+                        <p style="color: #888; margin-bottom: 20px;">独自のビジネスモデルをシステムで実現したい方へ</p>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 16px; color: #666;">*料金目安*</p>
+                            <p style="font-size: 32px; color: #007bff; font-weight: bold; margin: 5px 0;">初期費用 50〜100万円</p>
+                            <p style="font-size: 16px; color: #666; margin-top: 5px;">月額費用 5万円</p>
+                        </div>
+                        <ul style="text-align: left; list-style: none; padding: 0; margin: 0; color: #666;">
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> ゼロからのシステム企画・設計</li>
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> 独自の機能・サービスの開発</li>
+                            <li style="position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> 初期設定後のサポート</li>
+                        </ul>
+                    </div>
+
+                    <div style="flex: 1 1 280px; padding: 30px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <h4 style="font-size: 24px; color: #333; margin-bottom: 10px;">リニューアル・成長支援プラン</h4>
+                        <p style="color: #888; margin-bottom: 20px;">既存サイトを活かし、予約導線を強化したい方へ</p>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 16px; color: #666;">*料金目安*</p>
+                            <p style="font-size: 32px; color: #007bff; font-weight: bold; margin: 5px 0;">初期費用 20〜30万円</p>
+                            <p style="font-size: 16px; color: #666; margin-top: 5px;">月額費用 2~3万円</p>
+                        </div>
+                        <ul style="text-align: left; list-style: none; padding: 0; margin: 0; color: #666;">
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> Djangoでのオーダーメイド予約システム開発</li>
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> 既存サイトの改修・連携</li>
+                            <li style="position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> 長期的な運用・改善サポート</li>
+                        </ul>
+                    </div>
+
+                    <div style="flex: 1 1 280px; padding: 30px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <h4 style="font-size: 24px; color: #333; margin-bottom: 10px;">スモールスタートプラン</h4>
+                        <p style="color: #888; margin-bottom: 20px;">まずは手軽にオンライン予約を始めたい方へ</p>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 16px; color: #666;">*料金目安*</p>
+                            <p style="font-size: 32px; color: #007bff; font-weight: bold; margin: 5px 0;">初期費用 10万円</p>
+                            <p style="font-size: 16px; color: #666; margin-top: 5px;">月額1万円</p>
+                        </div>
+                        <ul style="text-align: left; list-style: none; padding: 0; margin: 0; color: #666;">
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> 既存サイトへの予約システム埋め込み</li>
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> サイト・SNSへの連携設定</li>
+                            <li style="position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; color: #007bff;">✓</span> 顧客管理機能・レポート機能</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px; color: #666;">
+                    <p style="margin-bottom: 10px;">
+                        ご希望のシステム内容によって、実際の費用は変動します。
+                    </p>
+                    <p>
+                        「まずはどのくらいかかるか知りたい」「ざっくり相談してみたい」 といった段階でも、お気軽にお問い合わせください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study" style="padding: 40px; font-family: sans-serif;">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 40px; margin-bottom: 20px;">導入事例</h2>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <div style="background-color: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); max-width: 300px; text-align: left;">
+                        <h3 style="font-size: 24px; margin-bottom: 10px;">美容院 A 様</h3>
+                        <p style="margin-bottom: 10px;"><strong>導入前の課題:</strong> 電話予約の対応に追われ、施術に集中できないことがありました。</p>
+                        <p style="margin-bottom: 10px;"><strong>導入後の効果:</strong> 予約対応の時間が半分になり、お客様一人ひとりに向き合える時間が増えました。</p>
+                        <p><strong>お客様の声:</strong> 「システムのおかげでダブルブッキングがなくなり、とても助かっています。操作も簡単で使いやすいです。」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-image">
+                    <img src="{% static 'images/plan.jpg' %}" alt="美容院・サロン向け予約システムの画面イメージ">
+                </div>
+                <div class="contact-content">
+                    <h2>『あなたのサロンに最適な予約システム、一緒に考えませんか？』</h2>
+                    <p>
+                        「いくらかかる？」「どんな機能があるの？」といったご相談から、<br>
+                        「今の予約システムを変えたい」「リピーターを増やしたい」といったお悩みまで、お気軽にご連絡ください。<br>
+                        <br>
+                        ご予算や店舗の規模に合わせて、最適なプランをご提案します。<br>
+                        *ご相談・お見積もりは無料です。*
+                    </p>
+                    <a href="/contact" class="contact-button">無料相談を申し込む</a>
+                    <p class="contact-note">※1営業日以内にご返信いたします</p>
+
+                    <p class="contact-demo">
+                        まずは実際のシステムを試してみたい方は<br>
+                        <a href="/reservation">**こちらからデモを体験**</a>してください
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Reang</h3>
+                <p>&copy; 2025 Reang. All Rights Reserved.</p>
+            </div>
+            
+            <div class="footer-info">
+                <address>
+                    <p><br></p>
+                    <p>代表：後藤田 烈志</p>
+                    <p>電話：<a href="tel:08086363296">080-8636-3296</a>（平日 10:00 - 17:00）</p>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/script.js' %}" ></script>
+</body>
+</html>

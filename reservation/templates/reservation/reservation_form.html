@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>面談予約フォーム</title>
+    <link rel="stylesheet" href="{% static 'css/reservation_style.css' %}">
+</head>
+<body>
+    <div class="reservation-container">
+        <h1>面談予約フォーム</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.name.label_tag }}
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                {{ form.date.label_tag }}
+                {{ form.date }}
+            </div>
+            <div class="form-group">
+                {{ form.time.label_tag }}
+                {{ form.time }}
+            </div>
+            <div class="form-group">
+                {{ form.message.label_tag }}
+                {{ form.message }}
+            </div>
+            <button type="submit">予約する</button>
+        </form>
+    </div>
+</body>
+</html>
