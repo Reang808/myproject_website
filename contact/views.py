@@ -54,7 +54,7 @@ def index(request):
                 admin_subject,
                 admin_message,
                 settings.DEFAULT_FROM_EMAIL,
-                ['praxisweb365@gmail.com'],  # ←ここをあなたの管理用メールアドレスに
+                ['info@reang.jp'],  # ←ここをあなたの管理用メールアドレスに
                 fail_silently=False,
             )
 
