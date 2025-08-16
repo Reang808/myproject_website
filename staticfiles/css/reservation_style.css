@@ -1,0 +1,95 @@
+/* 全体背景とフォント設定 */
+body {
+    font-family: "Hiragino Sans", "Helvetica Neue", Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* フォーム全体を囲むコンテナ */
+.reservation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 見出し */
+.reservation-container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* フォームグループ（各入力欄） */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* ラベル */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* 入力欄・選択欄・テキストエリア共通 */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* フォーカス時の強調 */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+/* テキストエリア専用 */
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* 送信ボタン */
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* ホバー時 */
+button:hover {
+    background-color: #45a049;
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+    .reservation-container {
+        padding: 20px;
+    }
+    .reservation-container h1 {
+        font-size: 1.5rem;
+    }
+}

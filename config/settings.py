@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e=05&ma=3#m8*rf!!b-=g*iw&!7__s#k#gcru3eddeg4_t$4)('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['163.44.96.248', 'reang.jp']
+ALLOWED_HOSTS = ['127.0.0.1','163.44.96.248', 'reang.jp']
 
 
 # Application definition
@@ -120,6 +120,23 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# --- Security settings ---
+# HTTPSを強制
+SECURE_SSL_REDIRECT = True
+# Cookieのセキュリティ
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_HTTPONLY = True
+CSRF_COOKIE_HTTPONLY = True
+# XSS/クリックジャッキング対策
+SECURE_BROWSER_XSS_FILTER = True
+X_FRAME_OPTIONS = 'DENY'
+# HSTSの有効化
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+# MIMEタイプスニッフィング防止
+SECURE_CONTENT_TYPE_NOSNIFF = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
