@@ -10,3 +10,12 @@ class Reservation(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.date} {self.time}"
+
+class TimeSlot(models.Model):
+    date = models.DateField()
+    time = models.TimeField()
+    is_booked = models.BooleanField(default=False)  # 管理者が埋める or 自動で予約済みにする
+
+    def __str__(self):
+        status = "予約済み" if self.is_booked else ""
+        return f"{self.date} {self.time} ({status})"
