@@ -1,3 +1,4 @@
+
 /* ==========================================
    Reang - Beauty × IT Fusion Design
    美容業界の洗練さとITの先進性を融合
@@ -137,7 +138,19 @@ p {
     justify-content: space-between;
     padding: 1rem 20px;
 }
-
+/* === LOGO IMAGE === */
+.logo-area {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+.logo-image {
+    height: 16px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    margin-right: 12px;
+}
 .logo-text {
     font-size: 2rem;
     font-weight: 700;
@@ -575,7 +588,7 @@ p {
 
 /* === FOOTER === */
 .site-footer {
-    background: var(--primary-color); /* 紺色背景 */
+    background: white; /* 紺色背景 */
     
     color: var(--white);
     padding: 3rem 0 1rem;
