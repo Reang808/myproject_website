@@ -23,12 +23,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e=05&ma=3#m8*rf!!b-=g*iw&!7__s#k#gcru3eddeg4_t$4)('
 
 
-# 開発環境用設定
-DEBUG = True
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
-# 開発用メール設定（メールはコンソールに出力）
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# 本番環境用設定
+DEBUG = False
+ALLOWED_HOSTS = ['reang.jp', '163.44.96.248', 'localhost', '127.0.0.1']
+
+# 本番用メール設定（例: Gmail SMTP。必要に応じて修正してください）
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# 以下は例。実際の運用情報に合わせてください。
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'info@reang.jp'
+EMAIL_HOST_PASSWORD = os.environ.get('REANG_MAIL_PASSWORD', '')
+DEFAULT_FROM_EMAIL = 'info@reang.jp'
 
 
 # Application definition
