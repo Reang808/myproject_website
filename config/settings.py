@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e=05&ma=3#m8*rf!!b-=g*iw&!7__s#k#gcru3eddeg4_t$4)(
 
 
 # 本番環境用設定
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['reang.jp', '163.44.96.248', 'localhost', '127.0.0.1']
 
 # 本番用メール設定（例: Gmail SMTP。必要に応じて修正してください）

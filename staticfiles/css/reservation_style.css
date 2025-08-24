@@ -1,6 +1,6 @@
 /* 全体背景とフォント設定 */
 body {
-    font-family: "Hiragino Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Hiragino Mincho ProN', 'ヒラギノ明朝 ProN', 'Yu Mincho', '游明朝', 'YuMincho', 'HiraMinProN-W3', 'HG明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
     background-color: #f9f9f9;
     margin: 0;
     padding: 20px;
