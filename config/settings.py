@@ -35,7 +35,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'info@reang.jp'
-EMAIL_HOST_PASSWORD = os.environ.get('REANG_MAIL_PASSWORD', '')
+EMAIL_HOST_PASSWORD = os.environ.get('rfyr lbyn dvbu cxtu')
 DEFAULT_FROM_EMAIL = 'info@reang.jp'
 
 
@@ -157,6 +157,6 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'info@reang.jp'
-EMAIL_HOST_PASSWORD = 'seqm kgso jhad jpkj'
+EMAIL_HOST_PASSWORD = 'rfyr lbyn dvbu cxtu'
 DEFAULT_FROM_EMAIL = 'info@reang.jp'
 EMAIL_HOST_USER = 'info@reang.jp'
