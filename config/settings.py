@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'top',
-    'reservation',
+
 ]
 
 MIDDLEWARE = [
@@ -87,8 +87,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'reang_db',
+        'USER': 'reang_user',
+        'PASSWORD': 'Retsushi.0718',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
