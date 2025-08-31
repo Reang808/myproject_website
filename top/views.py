@@ -14,3 +14,6 @@ def price(request):
 
 def features(request):
     return render(request, 'top/features.html')
+
+def privacy(request):
+    return render(request, 'top/privacy.html')
