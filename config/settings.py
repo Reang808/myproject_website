@@ -35,7 +35,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'info@reang.jp'
-EMAIL_HOST_PASSWORD = 'rfyr lbyn dvbu cxtu'
+EMAIL_HOST_PASSWORD = 'nisc lpxi utwj mzzo'
 DEFAULT_FROM_EMAIL = 'info@reang.jp'
 
 
@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'top',
-
+    'contactform',
 ]
 
 MIDDLEWARE = [
@@ -161,6 +161,6 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'info@reang.jp'
-EMAIL_HOST_PASSWORD = 'rfyr lbyn dvbu cxtu'
+EMAIL_HOST_PASSWORD = 'nisc lpxi utwj mzzo'
 DEFAULT_FROM_EMAIL = 'info@reang.jp'
 EMAIL_HOST_USER = 'info@reang.jp'
