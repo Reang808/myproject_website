@@ -15,6 +15,17 @@ def contact(request):
             plan = form.cleaned_data['plan']
             message = form.cleaned_data['message']
 
+            # Contactモデルに保存
+            from .models import Contact
+            Contact.objects.create(
+                name=name,
+                email=email,
+                phone=phone,
+                inquiry_type=inquiry_type,
+                plan=plan,
+                message=message
+            )
+
             subject = f'お問い合わせ: {inquiry_type} ({plan})'
             body = f'名前: {name}\nメール: {email}\n電話番号: {phone}\n問い合わせ項目: {inquiry_type}\nプラン: {plan}\n内容:\n{message}'
             send_mail(

@@ -1816,7 +1816,7 @@ blockquote {
 
 .social-icon {
   color: var(--color--white);
-  width: 26px;
+  width: 35px;
   transition: color .35s;
   display: inline-flex;
 }
@@ -1826,7 +1826,7 @@ blockquote {
 }
 
 .social-icon.facebook-icon {
-  width: 14px;
+  width: 35px;
 }
 
 .footer-button-wrap {

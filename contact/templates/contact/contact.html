@@ -68,45 +68,6 @@
       </div>
     </div>
     <main class="main-wrapper">
-      
-      <style>
-        .contact-form-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 70vh;
-        }
-        .contact-form {
-          font-family: 'Poppins', 'Inter', 'Melodrama', Arial, sans-serif;
-          max-width: 800px;
-          width: 100%;
-          padding: 32px 24px;
-          box-sizing: border-box;
-        }
-        @media (max-width: 600px) {
-          .contact-form-wrapper {
-            min-height: 0;
-            padding: 16px 0;
-          }
-          .contact-form {
-            max-width: 100%;
-            padding: 16px 8px;
-          }
-          .contact-form h2 {
-            font-size: 1.3em;
-            margin-bottom: 12px;
-          }
-          .contact-form p {
-            font-size: 1em;
-            margin-bottom: 20px;
-          }
-          .primary-button {
-            width: 100%;
-            font-size: 1em;
-            padding: 12px 0;
-          }
-        }
-      </style>
       <div class="contact-form-wrapper">
         <section class="contact-form">
   <h2 style="text-align:center; margin-bottom: 16px;">お問い合わせフォーム</h2>
@@ -131,10 +92,15 @@
                 <div class="footer-info-inner">
                   <a href="/" class="footer-logo-wrap w-inline-block"><img src="{% static 'images/reang.jpg' %}" loading="lazy" alt="" class="image-3"></a>
                   <div class="social-info-wrap">
-                    <a href="https://www.instagram.com/" target="_blank" class="social-icon w-inline-block"></a><img src="{% static 'images/Faceboo.png' %}" loading="lazy" sizes="35px" height="35" alt="" srcset="{% static 'images/Faceboo-p-500.png' %} 500w, {% static 'images/Faceboo-p-800.png' %} 800w, {% static 'images/Faceboo-p-1080.png' %} 1080w, {% static 'images/Faceboo-p-1600.png' %} 1600w, {% static 'images/Faceboo.png' %} 2084w"><img src="{% static 'images/Instagram.png' %}" loading="lazy" sizes="35px" height="35" alt="" srcset="{% static 'images/Instagram-p-500.png' %} 500w, {% static 'images/Instagram-p-800.png' %} 800w, {% static 'images/Instagram-p-1080.png' %} 1080w, {% static 'images/Instagram-p-1600.png' %} 1600w, {% static 'images/Instagram-p-2000.png' %} 2000w, {% static 'images/Instagram-p-2600.png' %} 2600w, {% static 'images/Instagram-p-3200.png' %} 3200w, {% static 'images/Instagram.png' %} 5000w"><img src="{% static 'images/github.png' %}" loading="lazy" alt="" height="35">
-                    <a href="https://www.facebook.com/" target="_blank" class="social-icon facebook-icon w-inline-block"></a>
-                    <a href="https://x.com/?lang=en" target="_blank" class="social-icon w-inline-block"></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon w-inline-block"></a>
+                    <a href="https://www.facebook.com/677574258782389?ref=pl_edit_xav_ig_profile_page_web/" target="_blank" class="social-icon facebook-icon w-inline-block">
+                      <img src="{% static 'images/Faceboo.png' %}" loading="lazy" sizes="35px" height="35" alt="Facebook" srcset="{% static 'images/Faceboo-p-500.png' %} 500w, {% static 'images/Faceboo-p-800.png' %} 800w, {% static 'images/Faceboo-p-1080.png' %} 1080w, {% static 'images/Faceboo-p-1600.png' %} 1600w, {% static 'images/Faceboo.png' %} 2084w">
+                    </a>
+                    <a href="https://www.instagram.com/syetemreang/" target="_blank" class="social-icon w-inline-block">
+                      <img src="{% static 'images/Instagram.png' %}" loading="lazy" sizes="35px" height="35" alt="Instagram" srcset="{% static 'images/Instagram-p-500.png' %} 500w, {% static 'images/Instagram-p-800.png' %} 800w, {% static 'images/Instagram-p-1080.png' %} 1080w, {% static 'images/Instagram-p-1600.png' %} 1600w, {% static 'images/Instagram-p-2000.png' %} 2000w, {% static 'images/Instagram-p-2600.png' %} 2600w, {% static 'images/Instagram-p-3200.png' %} 3200w, {% static 'images/Instagram.png' %} 5000w">
+                    </a>
+                    <a href="https://github.com/Reang808" target="_blank" class="social-icon w-inline-block">
+                      <img src="{% static 'images/github.png' %}" loading="lazy" alt="GitHub" height="35">
+                    </a>
                   </div>
                   <div class="footer-button-wrap">
                     <a href="{% url 'contact' %}" target="_blank" class="primary-button w-inline-block">
