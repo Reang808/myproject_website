@@ -1788,4 +1788,102 @@ textarea.w-select {
 .wf-layout-layout {
   display: grid;
 }
-
+.contact-form .primary-button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #4f8cff 0%, #6ed6ff 100%);
+  color: #fff;
+  font-size: 1.12rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.12);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.contact-form input {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 8px;
+  font-size: 1rem;
+  border: 1.5px solid #d0d7e6;
+  border-radius: 8px;
+  background: #f8faff;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  transition: border-color 0.2s;
+  
+}
+.contact-form input:focus {
+  border-color: #4f8cff;
+  outline: none;
+}
+.contact-form select {
+  width: 100%;
+  max-width: 100%;
+  padding: 16px 14px;
+  font-size: 1.08rem;
+  border: 1.5px solid #d0d7e6;
+  border-radius: 8px;
+  background: #f8faff;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6L8 10L12 6' stroke='%237a8ca3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 18px 18px;
+}
+.contact-form select:focus {
+  border-color: #4f8cff;
+  outline: none;
+}
+.contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 40px;
+  padding: 4px 2px;
+  font-size: 1rem;
+  border: 1.5px solid #d0d7e6;
+  border-radius: 8px;
+  background: #f8faff;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+.contact-form textarea:focus {
+  border-color: #4f8cff;
+  outline: none;
+}
+.contact-form {
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  font-family: 'Poppins', 'Inter', 'Melodrama', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form form {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
