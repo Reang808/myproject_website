@@ -96,8 +96,8 @@
           <div class="section-component">
             <div data-w-id="07c95a8f-347c-5335-93a4-35bfb01b1e52" style="-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="summer-sale-item">
               <div data-poster-url="{% static 'videos/coverr-coding-sequences-9906-1080p-poster-00001.jpg' %}" data-video-urls="{% static 'videos/coverr-coding-sequences-9906-1080p-transcode.mp4' %},{% static 'videos/coverr-coding-sequences-9906-1080p-transcode.webm' %}" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="07c95a8f-347c-5335-93a4-35bfb01b1e53-video" autoplay="" loop="" style="background-image:url(&quot;{% static 'videos/coverr-coding-sequences-9906-1080p-poster-00001.jpg' %}&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                  <source src="{% static 'videos/coverr-coding-sequences-9906-1080p-transcode.mp4' %}" data-wf-ignore="true">
-                  <source src="{% static 'videos/coverr-coding-sequences-9906-1080p-transcode.webm' %}" data-wf-ignore="true">
+                  {% comment %} <source src="{% static 'videos/coverr-coding-sequences-9906-1080p-transcode.mp4' %}" data-wf-ignore="true"> {% endcomment %}
+                  {% comment %} <source src="{% static 'videos/coverr-coding-sequences-9906-1080p-transcode.webm' %}" data-wf-ignore="true"> {% endcomment %}
                 </video>
                 <div class="summer-sale-product-item">
                   <div class="summer-sale-product-item-inner">
@@ -107,11 +107,11 @@
                       <div data-w-id="07c95a8f-347c-5335-93a4-35bfb01b1e57" style="-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="body-text-small-uppercase"></div>
                       <div data-w-id="07c95a8f-347c-5335-93a4-35bfb01b1e5b" style="-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="summer-sale-product-para">
                         <h1 class="heading-2"></h1>
-                        <p><br>‍小規模店舗・個人事業主の方に向けた「予約・集客を自動化する仕組み」をご提供します。</p>
+                        <p>‍小規模店舗・個人事業主の方に向けた「予約・集客を自動化する仕組み」をご提供します。<br></p>
                   </div>
                     </div>
                     <div data-w-id="07c95a8f-347c-5335-93a4-35bfb01b1e79" style="-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="align-center">
-                      <a href="/contact" class="primary-button w-inline-block">
+                      <a href="{% url 'contact' %}" class="primary-button w-inline-block">
                         <div class="button-border">
                           <div>お問い合わせ</div>
                         </div>
@@ -133,7 +133,7 @@
             <div data-w-id="5dc17dc7-0aa8-da8f-7688-c7a5477a8b88" class="footer-top-content">
               <div id="w-node-_5dc17dc7-0aa8-da8f-7688-c7a5477a8ba3-477a8b84" class="footer-link-columns">
                 <div class="footer-info-inner">
-                  <a href="index.html" class="footer-logo-wrap w-inline-block"><img src="{% static 'images/reang.jpg' %}" loading="lazy" alt="" class="image-3"></a>
+                  <a href="/" class="footer-logo-wrap w-inline-block"><img src="{% static 'images/reang.jpg' %}" loading="lazy" alt="" class="image-3"></a>
                   <div class="social-info-wrap">
                     <a href="https://www.instagram.com/" target="_blank" class="social-icon w-inline-block"></a><img src="{% static 'images/Faceboo.png' %}" loading="lazy" sizes="35px" height="35" alt="" srcset="{% static 'images/Faceboo-p-500.png' %} 500w, {% static 'images/Faceboo-p-800.png' %} 800w, {% static 'images/Faceboo-p-1080.png' %} 1080w, {% static 'images/Faceboo-p-1600.png' %} 1600w, {% static 'images/Faceboo.png' %} 2084w"><img src="{% static 'images/Instagram.png' %}" loading="lazy" sizes="35px" height="35" alt="" srcset="{% static 'images/Instagram-p-500.png' %} 500w, {% static 'images/Instagram-p-800.png' %} 800w, {% static 'images/Instagram-p-1080.png' %} 1080w, {% static 'images/Instagram-p-1600.png' %} 1600w, {% static 'images/Instagram-p-2000.png' %} 2000w, {% static 'images/Instagram-p-2600.png' %} 2600w, {% static 'images/Instagram-p-3200.png' %} 3200w, {% static 'images/Instagram.png' %} 5000w"><img src="{% static 'images/github.png' %}" loading="lazy" alt="" height="35">
                     <a href="https://www.facebook.com/" target="_blank" class="social-icon facebook-icon w-inline-block"></a>
@@ -141,9 +141,9 @@
                     <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon w-inline-block"></a>
                   </div>
                   <div class="footer-button-wrap">
-                    <a href="/about" target="_blank" class="primary-button w-inline-block">
+                    <a href="{% url 'contact' %}" target="_blank" class="primary-button w-inline-block">
                       <div class="button-border">
-                        <div>-About-</div>
+                        <div>お問い合わせ</div>
                       </div>
                       <div class="button-shadow footer-button-shadow"></div>
                     </a>
