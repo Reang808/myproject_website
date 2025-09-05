@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: Melodrama;
   src: url('../fonts/Melodrama-Medium.woff2') format("woff2");
   font-weight: 500;
@@ -44,7 +44,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 :root {
   --font-family--inter: Inter, sans-serif;

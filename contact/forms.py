@@ -7,9 +7,9 @@ class ContactForm(forms.Form):
 	inquiry_type = forms.ChoiceField(
 		label='問い合わせ項目',
 		choices=[
-			('general', '一般'),
-			('support', 'サポート'),
-			('feedback', 'フィードバック'),
+			('general', 'システム導入'),
+			('support', 'ご相談'),
+			('feedback', 'その他'),
 		],
 		required=True
 	)
@@ -17,9 +17,12 @@ class ContactForm(forms.Form):
 		label='プラン選択',
 		choices=[
 			('', '選択してください'),
-			('basic', 'ベーシック'),
-			('standard', 'スタンダード'),
-			('premium', 'プレミアム'),
+			('basic', '未定'),
+			('standard', 'LINE連携'),
+			('premium', 'LINE連携＋システム'),
+			('enterprise', 'Webサイト制作＋システム'),
+			('custom', 'Webサイト制作＋予約システム＋システム'),
+
 		],
 		required=False
 	)
