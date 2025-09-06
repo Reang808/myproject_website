@@ -7,7 +7,8 @@ class ContactForm(forms.Form):
 	inquiry_type = forms.ChoiceField(
 		label='問い合わせ項目',
 		choices=[
-			('general', 'システム導入'),
+			('service', '申し込み'),
+			('general', '料金について'),
 			('support', 'ご相談'),
 			('feedback', 'その他'),
 		],
