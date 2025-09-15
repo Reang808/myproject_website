@@ -19,10 +19,8 @@ class ContactForm(forms.Form):
 		choices=[
 			('', '選択してください'),
 			('basic', '未定'),
-			('standard', 'LINE連携'),
-			('premium', 'LINE連携＋システム'),
-			('enterprise', 'Webサイト制作＋システム'),
-			('custom', 'Webサイト制作＋予約システム＋システム'),
+			('standard', '『LINEで完結。スマホ１つで自動集客』'),
+			('enterprise', '『スマホだけ！会員・サブスクまるごと管理』'),
 
 		],
 		required=False

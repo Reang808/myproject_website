@@ -9,3 +9,6 @@ def about(request):
 
 def price(request):
 	return render(request, 'web/price.html')
+
+def privacy(request):
+	return render(request, 'web/privacy.html')
