@@ -7,8 +7,8 @@ def index(request):
 def about(request):
 	return render(request, 'web/about.html')
 
-def price(request):
-	return render(request, 'web/price.html')
+def faq(request):
+	return render(request, 'web/faq.html')
 
 def privacy(request):
 	return render(request, 'web/privacy.html')

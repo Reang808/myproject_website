@@ -4,3 +4,12 @@ from .models import Service
 def service(request):
     services = Service.objects.all()
     return render(request, 'service/service.html', {'services': services})
+
+def reseline(request):
+    return render(request, 'service/reseline.html')
+
+def linebizconnect(request):
+    return render(request, 'service/linebizconnect.html')
+
+def webboosters(request):
+    return render(request, 'service/webboosters.html')

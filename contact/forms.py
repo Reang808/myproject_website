@@ -19,8 +19,12 @@ class ContactForm(forms.Form):
 		choices=[
 			('', '選択してください'),
 			('basic', '未定'),
-			('standard', '『LINEで完結。スマホ１つで自動集客』'),
-			('enterprise', '『スマホだけ！会員・サブスクまるごと管理』'),
+			('standard', 'ReseLINE'),
+			('enterprise', 'LINE Biz Connect'),
+			('other', 'Web Boosters'),
+
+
+
 
 		],
 		required=False
