@@ -5,7 +5,7 @@ from . import views
 
 urlpatterns = [
     path('', views.service, name='service'),
-    path('reseline/', views.reseline, name='reseline'),
+    path('reserve/', views.reserve, name='reserve'),
     path('linebizconnect/', views.linebizconnect, name='linebizconnect'),
     path('webboosters/', views.webboosters, name='webboosters'),
 ]

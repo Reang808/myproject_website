@@ -15,18 +15,15 @@ class ContactForm(forms.Form):
 		required=True
 	)
 	plan = forms.ChoiceField(
-		label='プラン選択',
+		label='システムの種類',
 		choices=[
 			('', '選択してください'),
-			('basic', '未定'),
-			('standard', 'ReseLINE'),
-			('enterprise', 'LINE Biz Connect'),
-			('other', 'Web Boosters'),
-
-
-
-
-		],
+			('Question', '未定'),
+			('reservation', '予約システム'),
+			('ecommerce', 'ECサイト'),
+			('membership', '会員制サイト'),
+			('others', 'その他'),
+	],
 		required=False
 	)
 	message = forms.CharField(label='問い合わせ内容', widget=forms.Textarea, required=True)

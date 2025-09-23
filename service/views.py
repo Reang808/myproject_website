@@ -5,8 +5,8 @@ def service(request):
     services = Service.objects.all()
     return render(request, 'service/service.html', {'services': services})
 
-def reseline(request):
-    return render(request, 'service/reseline.html')
+def reserve(request):
+    return render(request, 'service/reserve.html')
 
 def linebizconnect(request):
     return render(request, 'service/linebizconnect.html')
