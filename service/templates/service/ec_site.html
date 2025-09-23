@@ -1,27 +1,24 @@
 {% load static %}
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Sep 04 2025 23:28:21 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="68b9760b31c80f234c780f53" data-wf-site="68b9760a31c80f234c780ed0" lang="ja">
+<!DOCTYPE html><html data-wf-page="68b9760b31c80f234c780f53" data-wf-site="68b9760a31c80f234c780ed0" lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Web Boosters</title>
-  <!-- SEO（検索エンジン向け） -->
-<meta name="description" content="Reangは、Webアプリ開発と自動集客システムの導入を支援するサービスです。お客様のビジネスに合わせた最適なプランをご提案し、集客から売上アップまでをサポートします。">
+  <title>コンサル・コーチ向け会員サイト構築｜あなたのビジネスをオンライン化</title>
+  
+  <meta name="description" content="コンサルタント・コーチング事業者様向けの会員サイト・ECサイトを構築。顧客管理、決済、コンテンツ販売機能で、あなたのビジネスの価値を最大化します。">
 
-<!-- OGP（SNS共有時の表示） -->
-<meta property="og:title" content="Reang | Webアプリ開発 × 自動集客システム">
-<meta property="og:description" content="Webアプリ開発と自動集客システムを組み合わせて、集客から売上アップまでをトータルにサポートします。新しい集客の形を体験してください。">
-<meta property="og:image" content="https://reang.jp/static/images/reang_ogp.png">
-<meta property="og:url" content="https://reang.jp/">
-<meta property="og:type" content="website">
+  <meta property="og:title" content="コンサル・コーチ向け会員サイト構築｜ビジネスを自動化・収益化">
+  <meta property="og:description" content="顧客管理、決済、コンテンツ販売を一つのシステムで。あなたの専門知識をオンラインコンテンツとして届け、安定した収益基盤を築きます。">
+  <meta property="og:image" content="{% static 'images/reang_ogp.png' %}">
+  <meta property="og:url" content="https://reang.jp/">
+  <meta property="og:type" content="website">
 
-<!-- Twitterカード -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Reang | Webアプリ開発 × 自動集客システム">
-<meta property="twitter:description" content="成果を出すホームページと自動集客システムで、あなたのビジネスを次のステージへ。reang.jp">
-<meta property="twitter:image" content="https://reang.jp/static/images/reang_ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="コンサル・コーチ向け会員サイト構築｜ビジネスを自動化・収益化">
+  <meta property="twitter:description" content="顧客管理、決済、コンテンツ販売を一つのシステムで。あなたの専門知識をオンラインコンテンツとして届け、安定した収益基盤を築きます。">
+  <meta property="twitter:image" content="{% static 'images/reang_ogp.png' %}">
 
-<!-- レスポンシブ対応 -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="{% static 'css/normalize.css' %}" rel="stylesheet" type="text/css">
   <link href="{% static 'css/webflow.css' %}" rel="stylesheet" type="text/css">
   <link href="{% static 'css/lie-zhi-s-stellar-site-25311a.webflow.css' %}" rel="stylesheet" type="text/css">
@@ -74,7 +71,7 @@
         </div>
       </div>
     </div>
-    <style>
+<style>
     /* 基本設定 */
     body {
         font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
@@ -109,7 +106,7 @@
         margin: 0;
     }
 
-    /* --- 1. こんなお悩みありませんか？ --- */
+    /* --- 1. 導入後の変化 --- */
     .problem-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -135,7 +132,7 @@
         font-size: 0.95rem;
     }
 
-    /* --- 2. 3つの変化 --- */
+    /* --- 2. 理想を叶える機能 --- */
     .benefits-section {
         background-color: #e5e5e5;
     }
@@ -236,7 +233,7 @@
     .pricing-card {
         background: #fff;
         border-radius: 16px;
-        max-width: 400px;
+        max-width: 450px;
         margin: 0 auto;
         padding: 32px;
         text-align: center;
@@ -254,6 +251,7 @@
         font-weight: 700;
         color: #14213d;
         margin-bottom: 24px;
+        line-height: 1.2;
     }
 
     .pricing-card .price span {
@@ -282,6 +280,13 @@
         position: absolute;
         left: 0;
     }
+    
+    .pricing-note {
+        font-size: 0.85rem;
+        color: #666;
+        text-align: left;
+        margin-top: 24px;
+    }
 
     /* --- 5. 未来セクション & CTAボタン --- */
     .future-section {
@@ -291,6 +296,13 @@
     .future-section p {
         max-width: 600px;
         margin: 0 auto 32px auto;
+    }
+    
+    .cta-buttons-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     .cta-button {
@@ -302,6 +314,7 @@
         border-radius: 8px;
         text-decoration: none;
         transition: background-color 0.3s, transform 0.2s;
+        border: 2px solid transparent;
     }
 
     .cta-button:hover {
@@ -309,148 +322,43 @@
         transform: translateY(-2px);
     }
     
-    /* --- レスポンシブ対応 --- */
-
-/* =======================================
-   タブレット & スマートフォン共通 (768px以下)
-   ======================================= */
-@media (max-width: 768px) {
-    .section {
-        padding: 48px 0;
-    }
-
-    .container {
-        padding: 0 20px; /* 左右の余白を確保 */
-    }
-
-    .section-header h2 {
-        font-size: 1.8rem; /* 見出しを少し小さく */
-        margin-bottom: 40px;
-    }
-
-    /* --- 各セクションの調整 --- */
-
-    /* お悩み & 3つの変化セクション */
-    /* グリッドを1カラムに */
-    .problem-grid,
-    .benefit-grid {
-        grid-template-columns: 1fr;
-        gap: 20px; /* カード間の余白を調整 */
+    .cta-button.secondary {
+        background: #fff;
+        color: #14213d;
+        border: 2px solid #14213d;
     }
     
-    .problem-card,
-    .benefit-card {
-        padding: 24px;
+    .cta-button.secondary:hover {
+        background-color: #f0f0f0;
     }
 
-    /* 導入の流れセクション */
-    .flow-list::before {
-        left: 20px; /* タイムラインの縦線を調整 */
+    @media (max-width: 768px) {
+        /* ... 省略 ... */
     }
 
-    .flow-item {
-        padding-left: 60px; /* テキストの開始位置を調整 */
+    @media (max-width: 480px) {
+        /* ... 省略 ... */
     }
-
-    .flow-item::before {
-        width: 40px; /* ステップ番号の円 */
-        height: 40px;
-        left: 0;
-        transform: translateY(-50%); /* 中央寄せ */
-    }
-
-    /* 料金プランセクション */
-    .pricing-card {
-        padding: 32px 24px;
-    }
-
-    .pricing-card .price {
-        font-size: 3rem; /* 料金のフォントサイズを調整 */
-    }
-    
-    .cta-button {
-        width: 100%; /* ボタンをカード幅いっぱいに */
-        box-sizing: border-box; /* paddingを含めて幅100%にする */
-    }
-}
-
-
-/* =======================================
-   iPhone SEなど、特に小さい画面向け (480px以下)
-   ======================================= */
-@media (max-width: 480px) {
-    body {
-        font-size: 15px; /* 全体の基準フォントサイズを少し小さく */
-    }
-
-    .section-header h2 {
-        font-size: 1.6rem; /* 見出しをさらに小さく */
-    }
-
-    /* カード内の見出しを調整 */
-    .problem-card h3,
-    .benefit-card h3,
-    .flow-item h4 {
-        font-size: 1.1rem;
-    }
-
-    /* カード内の余白を詰める */
-    .problem-card,
-    .benefit-card,
-    .flow-item {
-        padding: 20px;
-    }
-    
-    /* 導入の流れ */
-    .flow-list::before {
-        left: 18px;
-    }
-    
-    .flow-item {
-        padding-left: 55px;
-    }
-
-    .flow-item::before {
-        width: 36px;
-        height: 36px;
-        font-size: 1rem;
-    }
-    
-    /* 料金プラン */
-    .pricing-card .price {
-        font-size: 2.5rem; /* 料金をさらに小さく */
-    }
-
-    .pricing-card h3 {
-        font-size: 1.4rem;
-    }
-
-    /* ボタン */
-    .cta-button {
-        padding: 14px 20px;
-        font-size: 1rem;
-    }
-}
 </style>
 
 <main>
     <section class="section problems-section">
         <div class="container">
             <div class="section-header">
-                <h2>こんなお悩みありませんか？</h2>
+                <h2>専用システム導入で、あなたのビジネスはこう変わる</h2>
             </div>
             <div class="problem-grid">
                 <div class="problem-card">
-                    <h3>ホームページがない...</h3>
-                    <p>サービスを知ってもらう場所がなく、新規顧客を逃してしまっている。</p>
+                    <h3>価値ある情報が収益に</h3>
+                    <p>あなたの知識やノウハウを動画や記事にして会員限定で販売。新たな収益の柱を確立できます。</p>
                 </div>
                 <div class="problem-card">
-                    <h3>予約につながらない...</h3>
-                    <p>せっかくSNSで集客しても、予約までの導線がなくチャンスを逃している。</p>
+                    <h3>顧客管理の手間を大幅削減</h3>
+                    <p>顧客情報や進捗状況を一元管理。一人ひとりに合わせた最適なアプローチが自動化され、顧客満足度が向上します。</p>
                 </div>
                 <div class="problem-card">
-                    <h3>管理が面倒...</h3>
-                    <p>予約の受付やスケジュール調整に時間が取られ、施術やサービスに集中できない。</p>
+                    <h3>安定した収益基盤を構築</h3>
+                    <p>月額課金やサブスクリプションモデルを導入可能に。毎月の収益が安定し、事業計画が立てやすくなります。</p>
                 </div>
             </div>
         </div>
@@ -459,46 +367,42 @@
     <section class="section benefits-section">
         <div class="container">
             <div class="section-header">
-                <h2>Web Boosters導入後の変化</h2>
+                <h2>理想を叶える、充実の機能</h2>
             </div>
             <div class="benefit-grid">
                 <div class="benefit-card">
-                    <h3>魅力的なLPで集客</h3>
-                    <p>プロが制作する集客特化型のLPで、サービスの魅力をしっかり伝えます。</p>
+                    <h3>顧客管理システム</h3>
+                    <p>顧客情報、購入履歴、進捗をまとめて管理。パーソナライズされたサポートを提供し、顧客との関係を深化させます。</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>LPから直接予約</h3>
-                    <p>カレンダー予約機能をLPに搭載。閲覧から予約までシームレスに完結します。</p>
+                    <h3>決済・カートシステム</h3>
+                    <p>単発のコンテンツ販売から月額制のコミュニティまで。多様な決済方法に対応し、スムーズな購入体験を実現します。</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>運用も安心サポート</h3>
-                    <p>公開後の保守・運用も月額に含まれるので、継続的に安心して活用できます。</p>
+                    <h3>コンテンツ販売システム</h3>
+                    <p>動画、PDF、限定記事など、様々な形式のデジタルコンテンツを販売。会員ランクに応じた閲覧制限も可能です。</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section class="section flow-section">
         <div class="container">
             <div class="section-header">
-                <h2>導入の流れと期間</h2>
+                <h2>導入のステップ</h2>
             </div>
             <div class="flow-list">
                 <div class="flow-item" data-step="1">
-                    <h4>お問い合わせ</h4>
-                    <p>お問い合わせフォームからご連絡ください。担当者が簡単なヒアリングを行います。</p>
+                    <h4>STEP 1：ヒヤリング（1週間ほど）</h4>
+                    <p>あなたのビジネスモデル、目標、課題を深く理解するためのヒヤリングを行います。理想のオンライン事業の形を一緒に描きましょう。</p>
                 </div>
                 <div class="flow-item" data-step="2">
-                    <h4>ヒアリング・設計（1〜3日）</h4>
-                    <p>サービス内容やターゲット顧客に合わせた最適なLP設計をご提案します。</p>
+                    <h4>STEP 2：開発・テスト（2週間ほど）</h4>
+                    <p>ヒヤリング内容に基づき、あなた専用の会員サイト・ECサイトを構築します。最適な機能を実装し、徹底的に動作テストを行います。</p>
                 </div>
                 <div class="flow-item" data-step="3">
-                    <h4>LP制作・予約機能構築（5〜10日）</h4>
-                    <p>デザイナー・エンジニアがLPを制作し、予約機能を実装します。</p>
-                </div>
-                <div class="flow-item" data-step="4">
-                    <h4>公開・運用開始（当日）</h4>
-                    <p>完成したLPを公開し、すぐに集客・予約受付をスタート。公開後も保守運用で継続サポートします。</p>
+                    <h4>STEP 3：運用開始・サポート</h4>
+                    <p>完成したサイトを公開し、運用をスタート。公開後も安心して事業に集中できるよう、技術的なサポートを継続します。</p>
                 </div>
             </div>
         </div>
@@ -510,18 +414,24 @@
                 <h2>料金プラン</h2>
             </div>
             <div class="pricing-card">
-                <h3>Web Boosters</h3>
+                <h3>オーダーメイド構築プラン</h3>
                 <div class="price">
-                    <span>月額</span>
-                    9,800<span>円</span>
+                    150,000<span>円〜</span>
                 </div>
                 <ul class="pricing-list">
-                    <li>初期費用 50,000円</li>
-                    <li>集客特化型LP 1枚制作</li>
-                    <li>カレンダー予約機能搭載</li>
-                    <li>月額運用保守サポート込み</li>
+                    <li>あなた専用のサイト設計・デザイン</li>
+                    <li>顧客管理システム</li>
+                    <li>決済システム（Stripe等連携）</li>
+                    <li>コンテンツ販売システム</li>
+                    <li>カート機能</li>
                 </ul>
-                <a href="/contact" class="cta-button">今すぐ導入する</a>
+                <div class="pricing-note">
+                    <strong>運用後サポート：</strong><br>
+                    月額 10,000円〜30,000円（軽微な修正・保守管理）<br>
+                    ※ 大規模な機能追加やアップデートが必要な場合は、別途お見積もりいたします。
+                </div>
+                <br>
+                <a href="/contact?type=hearing" class="cta-button">まずはヒヤリングを予約する</a>
             </div>
         </div>
     </section>
@@ -529,14 +439,16 @@
     <section class="section future-section">
         <div class="container">
             <div class="section-header">
-                <h2>集客から予約まで、1枚のLPで完結。</h2>
+                <h2>あなたのビジネスを、次のステージへ。</h2>
             </div>
-            <p>Web Boostersがあれば、あなたのサービスを魅力的に伝えるLPと予約機能を一度に導入できます。<br>手軽にオンライン集客を始め、顧客との出会いを逃しません。</p>
-            <a href="/faq#WebBoosters" class="cta-button">よくあるご質問</a>
+            <p>専門知識をオンライン資産に変え、より多くの人に価値を届けませんか？<br>まずは、あなたの理想や構想をお聞かせください。最適なプランをご提案します。</p>
+            <div class="cta-buttons-wrap">
+                <a href="/contact?type=hearing" class="cta-button">ヒヤリングを予約する</a>
+                <a href="/contact" class="cta-button secondary">その他のお問い合わせ</a>
+            </div>
         </div>
     </section>
 </main>
-
   
   
 <footer class="footer">

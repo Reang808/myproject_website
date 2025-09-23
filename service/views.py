@@ -11,5 +11,5 @@ def reserve(request):
 def linebizconnect(request):
     return render(request, 'service/linebizconnect.html')
 
-def webboosters(request):
-    return render(request, 'service/webboosters.html')
+def ec_site(request):
+    return render(request, 'service/ec_site.html')

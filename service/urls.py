@@ -7,5 +7,5 @@ urlpatterns = [
     path('', views.service, name='service'),
     path('reserve/', views.reserve, name='reserve'),
     path('linebizconnect/', views.linebizconnect, name='linebizconnect'),
-    path('webboosters/', views.webboosters, name='webboosters'),
+    path('ec_site/', views.ec_site, name='ec_site'),
 ]
