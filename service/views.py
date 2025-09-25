@@ -8,8 +8,6 @@ def service(request):
 def reserve(request):
     return render(request, 'service/reserve.html')
 
-def linebizconnect(request):
-    return render(request, 'service/linebizconnect.html')
 
 def ec_site(request):
     return render(request, 'service/ec_site.html')
