@@ -1,5 +1,6 @@
 {% load static %}
-<!DOCTYPE html><html data-wf-page="68b9760b31c80f234c780f53" data-wf-site="68b9760a31c80f234c780ed0" lang="ja">
+<!DOCTYPE html>
+<html data-wf-page="68b9760b31c80f234c780f53" data-wf-site="68b9760a31c80f234c780ed0" lang="ja">
 <head>
   <meta charset="utf-8">
   <title>コンサル・コーチ向け会員サイト構築｜あなたのビジネスをオンライン化</title>
@@ -93,6 +94,24 @@
         padding: 60px 0;
     }
 
+    /* ヒーローセクションのスタイル */
+    .hero-section {
+        background-color: #14213d;
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+    }
+    .hero-section p {
+        font-size: 1.1rem;
+        max-width: 650px;
+        margin: 0 auto 32px auto;
+        opacity: 0.9;
+    }
+
     /* セクションヘッダー */
     .section-header {
         text-align: center;
@@ -105,8 +124,13 @@
         color: #14213d;
         margin: 0;
     }
+    .section-header p {
+        max-width: 600px;
+        margin: 12px auto 0 auto;
+        color: #555;
+    }
 
-    /* --- 1. 導入後の変化 --- */
+    /* --- 1. 導入後の変化 (お悩み) --- */
     .problem-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -169,9 +193,10 @@
         flex-direction: column;
         gap: 24px;
         position: relative;
+        max-width: 700px;
+        margin: 0 auto;
     }
     
-    /* タイムラインの縦線 */
     .flow-list::before {
         content: "";
         position: absolute;
@@ -190,7 +215,6 @@
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     
-    /* ステップ番号 */
     .flow-item::before {
         content: attr(data-step);
         position: absolute;
@@ -226,7 +250,7 @@
         background-color: #14213d;
     }
 
-    .pricing-section .section-header h2 {
+    .pricing-section .section-header h2, .pricing-section .section-header p {
         color: #fff;
     }
 
@@ -307,7 +331,7 @@
 
     .cta-button {
         display: inline-block;
-        background: #f1bd2fff;
+        background: #fca311;
         color: #14213d;
         font-weight: bold;
         padding: 14px 32px;
@@ -318,7 +342,7 @@
     }
 
     .cta-button:hover {
-        background-color: #fff27bff;
+        background-color: #ffb742;
         transform: translateY(-2px);
     }
     
@@ -333,123 +357,144 @@
     }
 
     @media (max-width: 768px) {
-        /* ... 省略 ... */
+        .hero-section h1 { font-size: 2rem; }
+        .section-header h2 { font-size: 1.8rem; }
     }
 
     @media (max-width: 480px) {
-        /* ... 省略 ... */
+        .hero-section h1 { font-size: 1.8rem; }
     }
 </style>
 
 <main>
-    <section class="section problems-section">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>あなたのビジネスを24時間働く<br>"自動販売機"にしませんか？</h1>
+            <p>
+                集客から販売、決済、顧客管理までを完全自動化。<br>
+                私たちは、あなたのビジネスの可能性を最大限に引き出す、完全オーダーメイドの会員制ECサイトを制作します。
+            </p>
+            <div class="cta-buttons-wrap">
+                <a href="/contact" class="cta-button">まずは無料で相談してみる</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2>専用システム導入で、あなたのビジネスはこう変わる</h2>
+                <h2>こんなお悩み、抱えていませんか？</h2>
+                <p>オンラインでのコンテンツ販売やセミナー運営。可能性は感じるものの、日々の煩雑な業務に追われ、本当に注力すべきことに時間を割けていない...。</p>
             </div>
             <div class="problem-grid">
                 <div class="problem-card">
-                    <h3>価値ある情報が収益に</h3>
-                    <p>あなたの知識やノウハウを動画や記事にして会員限定で販売。新たな収益の柱を確立できます。</p>
+                    <h3>時間がない</h3>
+                    <p>セミナーの受付、入金確認、顧客リストの作成...手作業が多くて時間がいくらあっても足りない。</p>
                 </div>
                 <div class="problem-card">
-                    <h3>顧客管理の手間を大幅削減</h3>
-                    <p>顧客情報や進捗状況を一元管理。一人ひとりに合わせた最適なアプローチが自動化され、顧客満足度が向上します。</p>
+                    <h3>管理が煩雑</h3>
+                    <p>顧客情報がバラバラ。誰がどの商品を買ったのか、すぐに把握できず機会損失につながっている。</p>
                 </div>
                 <div class="problem-card">
-                    <h3>安定した収益基盤を構築</h3>
-                    <p>月額課金やサブスクリプションモデルを導入可能に。毎月の収益が安定し、事業計画が立てやすくなります。</p>
+                    <h3>成長の停滞</h3>
+                    <p>手作業の限界で、事業をスケールさせられない。新しいコンテンツを作る時間も確保できない。</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Features Section -->
     <section class="section benefits-section">
         <div class="container">
             <div class="section-header">
-                <h2>理想を叶える、充実の機能</h2>
+                <h2>事業の成長を支える基本機能</h2>
+                <p>これらはほんの一例です。あなたのビジネスに合わせて、必要な機能を完全オーダーメイドで実装します。</p>
             </div>
             <div class="benefit-grid">
                 <div class="benefit-card">
                     <h3>顧客管理システム</h3>
-                    <p>顧客情報、購入履歴、進捗をまとめて管理。パーソナライズされたサポートを提供し、顧客との関係を深化させます。</p>
+                    <p>会員情報、購入履歴などを一元管理。顧客に合わせたアプローチを実現します。</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>決済・カートシステム</h3>
-                    <p>単発のコンテンツ販売から月額制のコミュニティまで。多様な決済方法に対応し、スムーズな購入体験を実現します。</p>
+                    <h3>決済機能連携</h3>
+                    <p>各種クレジットカード決済、銀行振込など、多様な決済手段に柔軟に対応可能です。</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>コンテンツ販売システム</h3>
-                    <p>動画、PDF、限定記事など、様々な形式のデジタルコンテンツを販売。会員ランクに応じた閲覧制限も可能です。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="section flow-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>導入のステップ</h2>
-            </div>
-            <div class="flow-list">
-                <div class="flow-item" data-step="1">
-                    <h4>STEP 1：ヒヤリング（1週間ほど）</h4>
-                    <p>あなたのビジネスモデル、目標、課題を深く理解するためのヒヤリングを行います。理想のオンライン事業の形を一緒に描きましょう。</p>
-                </div>
-                <div class="flow-item" data-step="2">
-                    <h4>STEP 2：開発・テスト（2週間ほど）</h4>
-                    <p>ヒヤリング内容に基づき、あなた専用の会員サイト・ECサイトを構築します。最適な機能を実装し、徹底的に動作テストを行います。</p>
-                </div>
-                <div class="flow-item" data-step="3">
-                    <h4>STEP 3：運用開始・サポート</h4>
-                    <p>完成したサイトを公開し、運用をスタート。公開後も安心して事業に集中できるよう、技術的なサポートを継続します。</p>
+                    <h3>商品管理機能</h3>
+                    <p>デジタルコンテンツ、セミナー、物販商品などを簡単に追加・編集・削除できます。</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Flow Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>導入の流れ</h2>
+            </div>
+            <div class="flow-list">
+                <div class="flow-item" data-step="1">
+                    <h4>お問い合わせ・ヒアリング</h4>
+                    <p>まずはお気軽にご相談ください。あなたのビジネスの現状や課題、将来の展望を詳しくお伺いします。</p>
+                </div>
+                <div class="flow-item" data-step="2">
+                    <h4>ご提案・お見積もり</h4>
+                    <p>ヒアリング内容を基に、最適なサイト構成と機能、詳細なお見積もりをご提案します。</p>
+                </div>
+                <div class="flow-item" data-step="3">
+                    <h4>設計・開発</h4>
+                    <p>ご契約後、専門のチームが設計と開発に着手します。進捗は定期的にご報告します。</p>
+                </div>
+                <div class="flow-item" data-step="4">
+                    <h4>納品・運用サポート</h4>
+                    <p>完成したサイトを納品し、操作方法のレクチャーも行います。公開後のサポートもお任せください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
     <section class="section pricing-section">
         <div class="container">
             <div class="section-header">
                 <h2>料金プラン</h2>
+                <p>あなたのビジネスに最適化されたシステムを、適正価格でご提供します。</p>
             </div>
             <div class="pricing-card">
-                <h3>オーダーメイド構築プラン</h3>
-                <div class="price">
-                    150,000<span>円〜</span>
-                </div>
+                <h3>会員制ECサイト構築</h3>
+                <div class="price">15<span>万円〜 (税別)</span></div>
                 <ul class="pricing-list">
-                    <li>あなた専用のサイト設計・デザイン</li>
-                    <li>顧客管理システム</li>
-                    <li>決済システム（Stripe等連携）</li>
-                    <li>コンテンツ販売システム</li>
-                    <li>カート機能</li>
+                    <li>ショッピングページ</li>
+                    <li>カート・決済ページ</li>
+                    <li>ログイン・会員ページ</li>
+                    <li>管理者用ページ (商品・顧客管理)</li>
+                    <li>レスポンシブデザイン</li>
                 </ul>
-                <div class="pricing-note">
-                    <strong>運用後サポート：</strong><br>
-                    月額 10,000円〜30,000円（軽微な修正・保守管理）<br>
-                    ※ 大規模な機能追加やアップデートが必要な場合は、別途お見積もりいたします。
-                </div>
-                <br>
-                <a href="/contact?type=hearing" class="cta-button">まずはヒヤリングを予約する</a>
+                 <a href="/contact" class="cta-button">詳細を問い合わせる</a>
+                <p class="pricing-note">
+                    ※サイトの規模や実装する追加機能によって変動します。まずはお気軽にご要望をお聞かせください。
+                </p>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="section future-section">
         <div class="container">
             <div class="section-header">
-                <h2>あなたのビジネスを、次のステージへ。</h2>
+                <h2>さあ、ビジネスの自動化を始めましょう</h2>
+                <p>まずは無料相談から。あなたのビジネスの課題や展望をお聞かせください。最適なプランをご提案します。</p>
             </div>
-            <p>専門知識をオンライン資産に変え、より多くの人に価値を届けませんか？<br>まずは、あなたの理想や構想をお聞かせください。最適なプランをご提案します。</p>
             <div class="cta-buttons-wrap">
-                <a href="/contact?type=hearing" class="cta-button">ヒヤリングを予約する</a>
-                <a href="/contact" class="cta-button secondary">その他のお問い合わせ</a>
+                <a href="https://reang-reserve.jp/tenant/reservation/" class="cta-button">無料で相談を予約する</a>
+                <a href="/service" class="cta-button secondary">サービス一覧を見る</a>
             </div>
         </div>
     </section>
 </main>
-  
   
 <footer class="footer">
       <div class="footer-inner">
@@ -496,7 +541,6 @@
                 </div>
                 <div class="copyright-text image">© All rights reserved. <a href="/privacy" class="">プライバシーポリシー</a></div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -507,3 +551,4 @@
   <script src="{% static 'js/webflow.js' %}" type="text/javascript"></script>
 </body>
 </html>
+
